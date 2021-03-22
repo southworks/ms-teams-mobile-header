@@ -1,0 +1,70 @@
+.appbar-container {
+  display: flex;
+  min-height: 61px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  overflow: hidden;
+}
+
+.mobile-appbar-container {
+  display: none;
+}
+
+.appbar-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.tools-section {
+  display: flex;
+}
+
+.tools-container {
+  display: flex;
+  margin: auto 20px;
+}
+
+.tools-content {
+  display: contents;
+}
+
+.mobile-tools-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-container {
+  display: flex;
+}
+
+.search-toolbar-content {
+  display: contents;
+}
+
+.search-item {
+  margin: 10px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .appbar-container {
+    display: none;
+  }
+
+  .mobile-appbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    min-height: 60px;
+    padding: 0 10px;
+    overflow: hidden;
+    gap: 5px;
+  }
+}
